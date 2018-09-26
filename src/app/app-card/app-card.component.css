@@ -1,0 +1,32 @@
+mat-card{
+    max-height: 12rem;
+    height: 96px;
+ 
+}
+
+.card-app > mat-card-content{
+    position: relative; 
+    height: inherit;
+    width: inherit;  
+    padding: 0 !important;
+}
+
+mat-card-content > .icon{
+    position: absolute; 
+    bottom:4px;
+    right:4px
+}
+
+mat-card-content > .title{
+    position: absolute; 
+    top:4px;
+    left:4px;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 600px){
+    mat-card{
+        max-width: 11.5rem;
+    }
+}

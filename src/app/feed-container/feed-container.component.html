@@ -1,0 +1,18 @@
+<mat-card   [ngClass]="{'compact-sidebar': compactSidebar}" style="min-height: 400px"  > 
+    <!-- fxFlex -->
+    <mat-card-content style="height:inherit; padding:0 !important;"> 
+
+        <mat-sidenav-container style = "background-color:#fff; " class="app-inner hideScroll">
+            <mat-sidenav #sidemenu class="sidebar-panel" id="sidebar-panel" mode="side" opened="true">
+              <mat-nav-list class="navigation">
+                <mat-list-item> 
+                 <a   mat-ripple > <i class = "fa fa-twitter fa-2x" aria-hidden= "true"></i> </a>
+                </mat-list-item>
+              </mat-nav-list>
+            </mat-sidenav>
+            <!-- <router-outlet></router-outlet> -->
+            <app-twitter-feed></app-twitter-feed>
+          </mat-sidenav-container>
+ 
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,8 @@
+<div class ="card-app-container">
+  <div   fxLayout="row wrap" fxLayoutGap.gt-sm="0%" fxLayoutGap="0%" fxLayoutAlign = "start start"  >  
+    <ng-container *ngFor = "let app of apps">
+      <app-card [icon] = "app.icon" [appName] ="app.name" fxFlex="1 1 25%" fxFlex.sm="1 1 33%"  fxFlex.xs="1 1 100%" fxFlex.md="1 1 25%" fxFlex.xxs = "1 1 100%"></app-card>
+    </ng-container>
+    </div>
+    
+</div>
